@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Document</title>
+
+
+</head>
+<bady>
+    Js In HTML
+   <div id="main" >Js In HTML</div>
+   <!--<script src="index.js"></script> -->
+   <footer style="color: red;">Test Footer</footer>
+
+
+    <script>
+        console.log("Hello JS!");
+        document.getElementById('main').innerHTML ="I love Js!";
+        const footerElement = document.getElementsByTagName('footer')[0];
+        footerElement.innerHTML = "<b>Footer</b>";
+        footerElement.style.color = "Green";
+
+        const para = document.createElement("p");
+        para.innerText = "This is a paragraph.";
+        document.getElementById('main').appendChild(para);
+        // document.body.appendChild(para);
+        
+    </script>
+    
+</bady>
+</html>
